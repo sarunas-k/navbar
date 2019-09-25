@@ -1,3 +1,6 @@
+/* 
+ *  General
+ */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +13,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 @media screen and (max-width: 1200px) {
     .navbar-full-width {
@@ -47,6 +50,11 @@ a {
 .arrow-up {
     font-size: 14px;
 }
+
+/* 
+ *  Full-width navigation bar 
+ */
+
 .navbar-full-width {
     position: absolute;
     left: 50%;
@@ -66,6 +74,49 @@ a {
     text-decoration: none;
     color: #000;
 }
+.navbar-full-width .navbar-full-width-additional {
+    background-color: #ccc;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    min-width: 100px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9999;
+    display: none;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional {
+    border-bottom: 1px solid black;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional:last-child {
+    border-bottom: 0;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional span {
+    padding: 0 30px;
+    font-size: 16px;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional a {
+    display: block;
+}
+#products-checkbox-full-width:checked + label > .navbar-full-width-additional,
+#vision-checkbox-full-width:checked + label > .navbar-full-width-additional {
+    display: block;
+}
+#products-checkbox-full-width:checked + label > .arrow-down,
+#vision-checkbox-full-width:checked + label > .arrow-down,
+#products-checkbox-full-width + label .arrow-up,
+#vision-checkbox-full-width + label .arrow-up {
+    display: none;
+}
+#products-checkbox-full-width:checked + label > .arrow-up,
+#vision-checkbox-full-width:checked + label > .arrow-up {
+    display: inline-block;
+}
+
+/*
+ *  Side navigation bar
+ */
+
 .menu-toggle-button {
     width: 30px;
     float: left;
@@ -93,7 +144,7 @@ a {
     background-color: #dfdfdf;
     float: left;
     clear: left;
-    transition: opacity 0.3s;
+    transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
 }
 .sidebar label {
     display: block;
@@ -122,48 +173,10 @@ a {
     width: 300px;
     background-color: #eee;
     z-index: 9999;
-    transition: opacity 0.3s;
+    transition: opacity 0.1s ease-out;
 }
 .sidebar .arrow-up {
     display: none;
-}
-.navbar-full-width .navbar-full-width-additional {
-    background-color: #ccc;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    min-width: 100px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 9999;
-    display: none;
-}
-.navbar-full-width .navbar-full-width-additional .menu-item-top-additional {
-    border-bottom: 1px solid black;
-}
-.navbar-full-width .navbar-full-width-additional .menu-item-top-additional:last-child {
-    border-bottom: 0;
-}
-.navbar-full-width .navbar-full-width-additional .menu-item-top-additional span {
-    padding: 0 30px;
-    font-size: 16px;
-}
-.navbar-full-width .navbar-full-width-additional .menu-item-top-additional a {
-    display: block;
-}
-#products-checkbox:checked + label > .navbar-full-width-additional,
-#vision-checkbox:checked + label > .navbar-full-width-additional {
-    display: block;
-}
-#products-checkbox:checked + label > .arrow-down,
-#vision-checkbox:checked + label > .arrow-down,
-#products-checkbox + label .arrow-up,
-#vision-checkbox + label .arrow-up {
-    display: none;
-}
-#products-checkbox:checked + label > .arrow-up,
-#vision-checkbox:checked + label > .arrow-up {
-    display: inline-block;
 }
 #toggle-checkbox:checked + label > .sidebar {
     height: auto;
