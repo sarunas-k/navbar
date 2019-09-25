@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: 18px;
+}
+body {
+    background: rgb(90,88,113);
+    background: linear-gradient(90deg, rgba(90,88,113,0.5) 0%, rgba(62,62,117,0.5) 35%, rgba(220,246,251,0.5) 100%);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 1200px) {
+    .navbar-full-width {
+        display: none !important;
+    }
+    .sidebar-checkbox-label {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 560px) {
+    .navbar-full-width {
+        display: none !important;
+    }
+    .sidebar {
+        width: 100% !important;
+    }
+    .sidebar .sidebar-additional {
+        width: 100% !important;
+    }
+    .sidebar-checkbox-label {
+        display: block !important;
+    }
+}
+.top-bar {
+    background-color: #ccc;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+.hide {
+    display: none;
+}
+.arrow-down,
+.arrow-up {
+    font-size: 14px;
+}
+.navbar-full-width {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 50px;
+}
+
+.navbar-full-width .menu-item-top {
+    float: left;
+    padding: 0 20px;
+}
+.navbar-full-width label.menu-item-top {
+    display: block;
+    position: relative;
+}
+.navbar-full-width a {
+    text-decoration: none;
+    color: #000;
+}
+.menu-toggle-button {
+    width: 30px;
+    float: left;
+    margin: 15px 0 15px 20px;
+}
+.menu-toggle-button div {
+    height: 4px;
+    width: 30px;
+    margin-bottom: 4px;
+    background-color: #000;
+}
+.menu-toggle-button div:last-child {
+    margin-bottom: 0;
+}
+.sidebar-checkbox-label {
+    display:none;
+    position: relative;
+}
+.sidebar {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    min-height: 600px;
+    width: 300px;
+    background-color: #dfdfdf;
+    float: left;
+    clear: left;
+    transition: opacity 0.3s;
+}
+.sidebar label {
+    display: block;
+}
+.sidebar .sidebar-menu-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+.sidebar .sidebar-menu-item-small {
+    padding: 15px 0;
+}
+.sidebar .sidebar-menu-item-small span {
+    font-size: 16px;
+}
+.sidebar .arrow-down,
+.sidebar .arrow-up {
+    position: absolute;
+    right: 20px;
+}
+.sidebar-additional {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 300px;
+    background-color: #eee;
+    z-index: 9999;
+    transition: opacity 0.3s;
+}
+.sidebar .arrow-up {
+    display: none;
+}
+.navbar-full-width .navbar-full-width-additional {
+    background-color: #ccc;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    min-width: 100px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9999;
+    display: none;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional {
+    border-bottom: 1px solid black;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional:last-child {
+    border-bottom: 0;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional span {
+    padding: 0 30px;
+    font-size: 16px;
+}
+.navbar-full-width .navbar-full-width-additional .menu-item-top-additional a {
+    display: block;
+}
+#products-checkbox:checked + label > .navbar-full-width-additional,
+#vision-checkbox:checked + label > .navbar-full-width-additional {
+    display: block;
+}
+#products-checkbox:checked + label > .arrow-down,
+#vision-checkbox:checked + label > .arrow-down,
+#products-checkbox + label .arrow-up,
+#vision-checkbox + label .arrow-up {
+    display: none;
+}
+#products-checkbox:checked + label > .arrow-up,
+#vision-checkbox:checked + label > .arrow-up {
+    display: inline-block;
+}
+#toggle-checkbox:checked + label > .sidebar {
+    height: auto;
+    visibility: visible;
+    opacity: 0.95;
+}
+#products-checkbox-sidebar:checked + label > .sidebar-additional {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+#products-checkbox-sidebar:checked + label .arrow-down {
+    display: none;
+}
+#products-checkbox-sidebar:checked + label .arrow-up {
+    display: inline-block;
+}
+#vision-checkbox-sidebar:checked + label > .sidebar-additional {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+#vision-checkbox-sidebar:checked + label .arrow-down {
+    display: none;
+}
+#vision-checkbox-sidebar:checked + label .arrow-up {
+    display: inline-block;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <title>Responsive CSS-only navigation for touch devices</title>
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <input type="checkbox" name="toggle-checkbox" id="toggle-checkbox" class="hide">
+            <label class="sidebar-checkbox-label" for="toggle-checkbox">
+                <div class="menu-toggle-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="sidebar">
+                    <!-- SIDEBAR HOME -->
+                    <a href="#"><div class="sidebar-menu-item"><span>HOME</span></div></a>
+                    <!-- SIDEBAR ABOUT -->
+                    <a href="#"><div class="sidebar-menu-item"><span>ABOUT</span></div></a>
+                    <!-- SIDEBAR PRODUCTS -->
+                    <div class="sidebar-products">
+                        <input type="checkbox" name="products-checkbox-sidebar" id="products-checkbox-sidebar" class="hide">
+                        <label for="products-checkbox-sidebar">
+                            <div class="sidebar-menu-item">
+                                <span>PRODUCTS</span>
+                                <span class="arrow-down">&#9660;</span>
+                                <span class="arrow-up">&#9650;</span>
+                            </div>
+                            <div class="sidebar-additional">
+                                    <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Flip flops</span></div></a>
+                                    <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Umbrellas</span></div></a>
+                                    <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Caps</span></div></a>
+                                    <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Shoes</span></div></a>
+                                    <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Other</span></div></a>
+                                </div>
+                        </label>
+                    </div>
+                    <!-- SIDEBAR VISION -->
+                    <div class="sidebar-vision">
+                        <input type="checkbox" name="vision-checkbox-sidebar" id="vision-checkbox-sidebar" class="hide">
+                        <label for="vision-checkbox-sidebar">
+                            <div class="sidebar-menu-item">
+                                <span>VISION</span>
+                                <span class="arrow-down">&#9660;</span>
+                                <span class="arrow-up">&#9650;</span>
+                            </div>
+                            <div class="sidebar-additional">
+                                <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Foundation</span></div></a>
+                                <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Projects</span></div></a>
+                                <a href="#"><div class="sidebar-menu-item sidebar-menu-item-small"><span>Future</span></div></a>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- SIDEBAR CONTACT US -->
+                    <a href="#"><div class="sidebar-menu-item"><span>CONTACT US</span></div></a>
+                </div>
+            </label>
+            
+            <!-- MENU FULL WIDTH -->
+            <div class="navbar-full-width">
+                <!-- TOP MENU HOME -->
+                <div class="menu-item-top">HOME</div>
+                <!-- TOP MENU ABOUT -->
+                <div class="menu-item-top">ABOUT</div>
+                <!-- TOP MENU PRODUCTS -->
+                <input type="checkbox" name="products-checkbox" id="products-checkbox" class="hide">
+                <label for="products-checkbox" class="menu-item-top">PRODUCTS 
+                    <span class="arrow-down">&#9660;</span>
+                    <span class="arrow-up">&#9650;</span>
+                        <div class="navbar-full-width-additional">
+                            <div class="menu-item-top-additional"><a href="#"><span>Flip flops</span></a></div>
+                            <div class="menu-item-top-additional"><a href="#"><span>Umbrellas</span></a></div></a>
+                            <div class="menu-item-top-additional"><a href="#"><span>Caps</span></a></div>
+                            <div class="menu-item-top-additional"><a href="#"><span>Shoes</span></a></div>
+                            <div class="menu-item-top-additional"><a href="#"><span>Other</span></a></div>
+                    </div>
+                </label>
+                <!-- TOP MENU VISION -->
+                <input type="checkbox" name="vision-checkbox" id="vision-checkbox" class="hide">
+                <label for="vision-checkbox" class="menu-item-top">VISION 
+                    <span class="arrow-down">&#9660;</span>
+                    <span class="arrow-up">&#9650;</span>
+                    <div class="navbar-full-width-additional">
+                        <div class="menu-item-top-additional"><a href="#"><span>Foundation</span></a></div>
+                        <div class="menu-item-top-additional"><a href="#"><span>Projects</span></a></div>
+                        <div class="menu-item-top-additional"><a href="#"><span>Future</span></a></div>
+                    </div>
+                </label> 
+                <!-- TOP MENU CONTACT US -->
+                <div class="menu-item-top">CONTACT US</div>
+            </div>
+        </div>
+    </body>
+</html>
