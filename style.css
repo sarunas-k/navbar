@@ -39,7 +39,7 @@ a {
 }
 .top-bar {
     background-color: #ccc;
-    height: 50px;
+    height: 56px;
     text-align: center;
     position: relative;
 }
@@ -59,7 +59,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    line-height: 50px;
+    line-height: 56px;
 }
 
 .navbar-full-width .menu-item-top {
@@ -120,7 +120,7 @@ a {
 .menu-toggle-button {
     width: 30px;
     float: left;
-    margin: 15px 0 15px 20px;
+    margin: 18px 0 18px 20px;
 }
 .menu-toggle-button div {
     height: 4px;
